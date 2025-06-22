@@ -20,9 +20,9 @@ namespace BOGOMATCH_INFRASTRUCTURE.SERVICES
         {
             try
             {
-                var apiKey = _configuration["SendGridSettings:ApiKey"];
-                var fromEmail = _configuration["SendGridSettings:FromEmail"];
-                var fromName = _configuration["SendGridSettings:FromName"];
+                var apiKey = "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";
+                var fromEmail = "barfi8barfi2595@gmail.com";
+                var fromName = "BOGOMATCH";
 
                 var client = new SendGridClient(apiKey);
                 var from = new EmailAddress(fromEmail, fromName);
