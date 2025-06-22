@@ -22,9 +22,9 @@ public class UserController : ControllerBase
 
     [HttpPost("Login")]
     [AllowAnonymous]
-    public async Task<IActionResult> LoginAsync([FromBody] User userObj)
+    public async Task<IActionResult> LoginAsync(string email, string password)
     {
-        var result = await _authService.AuthenticateAsync(userObj);
+        var result = await _authService.LoginAsync(email, password);
         return Ok(result);
     }
 

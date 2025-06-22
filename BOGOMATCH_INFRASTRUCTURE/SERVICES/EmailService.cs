@@ -46,10 +46,5 @@ namespace BOGOMATCH_INFRASTRUCTURE.SERVICES
                 return new EmailResult(false, $"Exception occurred while sending email: {ex.Message}");
             }
         }
-
-        
-
-
     }
-
 }
